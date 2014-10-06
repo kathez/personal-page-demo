@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Homemade+Apple);
 
@@ -12,16 +11,22 @@ body {
 	font-family: 'Homemade Apple';
 }
 
+#shortcut {
+	float: right;
+}
+
+
 header, section, footer {
 	padding: 1em;
 }
 
 header {
-	background-image: url(../img/background.jpg); 
+	background-image: url(../img/background.jpg);
 	background-size: cover;
 	color: #FFFFFF;
-}
+	overflow: auto;
 
+}
 
 header a:link,
 header a:visited {
@@ -31,8 +36,6 @@ header a:visited {
 	padding-right: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	transition: all 0.5s;
-
 }
 
 header a:hover,
@@ -40,8 +43,6 @@ header a:focus {
 	text-decoration: underline;
 	color: #FFFFFF;
 	background-color: #CC0000;
-	box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.5);
-
 }
 
 #about, #projects {
@@ -62,16 +63,12 @@ footer {
 	max-width: 400px;
 	float: left;
 	margin-right: 1em;
-	/* opacity: 1; */
-	transition: all 1s;
+	opacity: 1;
 
 }
 
 #about img:hover {
-	/* opacity: 0.7; */
-	transform: scale(1.1, 1.1) translateX(10px);
-	box-shadow: 10px 10px 5px rgba(50, 50, 50, 0.5);
-
+	opacity: 0.7;
 }
 
 #education {
